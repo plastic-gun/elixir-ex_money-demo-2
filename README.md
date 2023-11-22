@@ -1,21 +1,18 @@
 # Demo
 
-**TODO: Add description**
+A showcase for simplified `Money.ExchangeRatesLite`.
 
-## Installation
+## Quick start
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `demo` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:demo, "~> 0.1.0"}
-  ]
-end
+```
+$ export OPEN_EXCHANGE_RATES_APP_ID="your app id"
+$ mix deps.get
+$ iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/demo>.
+## `Demo.ExchangeRates`
 
+```
+iex> Demo.ExchangeRates.latest_rates()
+iex> Demo.ExchangeRates.historic_rates(~D[2022-02-01])
+```
